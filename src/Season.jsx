@@ -33,6 +33,7 @@ const Season = () => {
               slidesPerView: 3,
             },
           }}
+          loop={true}
           scrollbar={{ draggable: true }}
           navigation={true}
           onSwiper={(swiper) => console.log(swiper)}
@@ -43,7 +44,7 @@ const Season = () => {
               <img src="Images\img04.webp" className='w-full' alt="" />
               <p className='font-primary mt-5 text-2xl'>In Bloom</p>
               <span className='text-gray-400 mt-2 block font-light'>$65.00-$98.00</span>
-              <button className='hover:block hidden border border-black px-12 py-4 rounded-full hover:bg-black hover:text-white transition-colors absolute bottom-28 w-full mx-2 bg-gray-50 left-1/2 -translate-x-1/2'><a href="#" className='text-inherit uppercase'>Shop Now</a></button>
+              <button className='hover:block hidden border border-black px-12 py-4 rounded-full hover:bg-black hover:text-white transition-colors absolute bottom-28 w-56 mx-2 bg-gray-50 left-1/2 -translate-x-1/2'><a href="#" className='text-inherit uppercase'>Shop Now</a></button>
             </div>
           </SwiperSlide>
           <SwiperSlide className='mb-12'>
@@ -51,7 +52,7 @@ const Season = () => {
               <img src="Images\img05.webp" className='w-full' alt="" />
               <p className='font-primary mt-5 text-2xl'>Vintage Heur</p>
               <span className='text-gray-400 mt-2 block font-light'>$65.00-$90.00</span>
-              <button className='hover:block hidden border border-black px-12 py-4 rounded-full hover:bg-black hover:text-white transition-colors absolute bottom-28 w-full mx-2 bg-gray-50 left-1/2 -translate-x-1/2'><a href="#" className='text-inherit uppercase'>Shop Now</a></button>
+              <button className='hover:block hidden border border-black px-12 py-4 rounded-full hover:bg-black hover:text-white transition-colors absolute bottom-28 w-56 mx-2 bg-gray-50 left-1/2 -translate-x-1/2'><a href="#" className='text-inherit uppercase'>Shop Now</a></button>
 
             </div>
           </SwiperSlide>
@@ -60,7 +61,7 @@ const Season = () => {
               <img src="Images\img06.webp" className='w-full' alt="" />
               <p className='font-primary mt-5 text-2xl'>Burnished Blossom</p>
               <span className='text-gray-400 mt-2 block font-light'>$43.00-$63.00</span>
-              <button className='hover:block hidden border border-black px-12 py-4 rounded-full hover:bg-black hover:text-white transition-colors absolute bottom-28 w-full mx-2 bg-gray-50 left-1/2 -translate-x-1/2'><a href="#" className='text-inherit uppercase'>Shop Now</a></button>
+              <button className='hover:block hidden border border-black px-12 py-4 rounded-full hover:bg-black hover:text-white transition-colors absolute bottom-28 w-56 mx-2 bg-gray-50 left-1/2 -translate-x-1/2'><a href="#" className='text-inherit uppercase'>Shop Now</a></button>
 
             </div>
           </SwiperSlide>
@@ -69,7 +70,7 @@ const Season = () => {
               <img src="Images\img04.webp" className='w-full' alt="" />
               <p className='font-primary mt-5 text-2xl'>In Bloom</p>
               <span className='text-gray-400 mt-2 block font-light'>$65.00-$98.00</span>
-              <button className='hover:block hidden border border-black px-12 py-4 rounded-full hover:bg-black hover:text-white transition-colors absolute bottom-28 w-full mx-2 bg-gray-50 left-1/2 -translate-x-1/2'><a href="#" className='text-inherit uppercase'>Shop Now</a></button>
+              <button className='hover:block hidden border border-black px-12 py-4 rounded-full hover:bg-black hover:text-white transition-colors absolute bottom-28 w-56 mx-2 bg-gray-50 left-1/2 -translate-x-1/2'><a href="#" className='text-inherit uppercase'>Shop Now</a></button>
             </div>
           </SwiperSlide>
           <SwiperSlide className='mb-12'>
@@ -77,7 +78,7 @@ const Season = () => {
               <img src="Images\img05.webp" className='w-full' alt="" />
               <p className='font-primary mt-5 text-2xl'>Vintage Heur</p>
               <span className='text-gray-400 mt-2 block font-light'>$65.00-$90.00</span>
-              <button className='hover:block hidden border border-black px-12 py-4 rounded-full hover:bg-black hover:text-white transition-colors absolute bottom-28 w-full mx-2 bg-gray-50 left-1/2 -translate-x-1/2'><a href="#" className='text-inherit uppercase'>Shop Now</a></button>
+              <button className='hover:block hidden border border-black px-12 py-4 rounded-full hover:bg-black hover:text-white transition-colors absolute bottom-28 w-56 mx-2 bg-gray-50 left-1/2 -translate-x-1/2'><a href="#" className='text-inherit uppercase'>Shop Now</a></button>
 
             </div>
           </SwiperSlide>
@@ -86,7 +87,7 @@ const Season = () => {
               <img src="Images\img06.webp" className='w-full' alt="" />
               <p className='font-primary mt-5 text-2xl'>Burnished Blossom</p>
               <span className='text-gray-400 mt-2 block font-light'>$43.00-$63.00</span>
-              <button className='hover:block hidden border border-black px-12 py-4 rounded-full hover:bg-black hover:text-white transition-colors absolute bottom-28 w-full mx-2 bg-gray-50 left-1/2 -translate-x-1/2'><a href="#" className='text-inherit uppercase'>Shop Now</a></button>
+              <button className='hover:block hidden border border-black px-12 py-4 rounded-full hover:bg-black hover:text-white transition-colors absolute bottom-28 w-56 mx-2 bg-gray-50 left-1/2 -translate-x-1/2'><a href="#" className='text-inherit uppercase'>Shop Now</a></button>
 
             </div>
           </SwiperSlide>

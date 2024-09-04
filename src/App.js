@@ -8,6 +8,7 @@ import OurStory from './OurStory';
 import Gifts from './Gifts';
 import SchoolFlower from './SchoolFlower';
 import Blogs from './Blogs';
+import Readmore from './Readmore';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <Gifts />
       <SchoolFlower />
       <Blogs />
+      <Readmore />
     </main>
   );
 };
