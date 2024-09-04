@@ -10,6 +10,7 @@ import SchoolFlower from './SchoolFlower';
 import Blogs from './Blogs';
 import Readmore from './Readmore';
 import OurStore from './OurStore';
+import FollowUs from './FollowUs';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
       <Blogs />
       <Readmore />
       <OurStore />
+      <FollowUs />
     </main>
   );
 };
