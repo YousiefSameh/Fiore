@@ -11,6 +11,7 @@ import Blogs from './Blogs';
 import Readmore from './Readmore';
 import OurStore from './OurStore';
 import FollowUs from './FollowUs';
+import Footer from './footer';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
       <Readmore />
       <OurStore />
       <FollowUs />
+      <Footer />
     </main>
   );
 };
