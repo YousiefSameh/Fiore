@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav className='font-secondary'>
+    <nav>
       <div className='flex items-center justify-between'>
         <input type="text" placeholder='Search' className='bg-transparent p-3 placeholder:text-black placeholder:uppercase'/>
         <h1 className='font-primary text-5xl p-2 font-bold'>Fiore</h1>

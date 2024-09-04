@@ -1,0 +1,31 @@
+.swiper-scrollbar {
+  background: transparent;
+}
+
+.swiper-scrollbar-drag {
+  background: #E5E8D5 !important;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  padding: 15px 20px;
+  background: #E5E8D5;
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 20px;
+  border-radius: 50%;
+  color: black;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  padding: 15px 20px;
+  background: #E5E8D5;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 20px;
+  border-radius: 50%;
+  color: black;
+}
+
+.card:hover button {
+  display: block;
+}
