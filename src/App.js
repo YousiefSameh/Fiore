@@ -3,6 +3,7 @@ import Home from './Home';
 import Season from './Season';
 import Offers from './offers';
 import Popular from './Popular';
+import Phrase from './Phrase';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Season />
       <Offers />
       <Popular />
+      <Phrase />
     </main>
   );
 };
