@@ -36,8 +36,6 @@ const Season = ({ darkMode }) => {
           loop={true}
           scrollbar={{ draggable: true }}
           navigation={true}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log('slide change')}
         >
           <SwiperSlide className='mb-12'>
             <div className={`card text-center w-96 relative transition-all ${darkMode ? 'bg-gray-800' : 'bg-white'}`}>

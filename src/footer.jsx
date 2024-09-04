@@ -1,8 +1,12 @@
 import React from 'react';
 
 const Footer = ({ darkMode }) => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-    <footer className={`p-8 lg:p-16 ${darkMode ? 'bg-gray-900 text-white' : 'bg-third text-black'}`}>
+    <footer className={`p-8 lg:p-16 ${darkMode ? 'bg-gray-900 text-white' : 'bg-third text-black'} relative`}>
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
         <div className="col flex flex-col gap-6">
           <h1 className={`font-primary ${darkMode ? 'text-secondary' : 'text-secondary'} text-5xl sm:text-6xl lg:text-7xl`}>Fiore</h1>
@@ -23,16 +27,16 @@ const Footer = ({ darkMode }) => {
         <div className="col flex flex-col gap-4">
           <p className={`text-lg sm:text-xl ${darkMode ? 'text-gray-300' : 'text-black'}`}>Follow Us</p>
           <div className="social-media flex gap-3 mt-3">
-            <a href="#" className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center border ${darkMode ? 'border-gray-700 hover:bg-black hover:border-black' : 'border-gray-300 hover:bg-black hover:border-black'} transition-all hover:text-white`}>
+            <a href="#" className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center border ${darkMode ? 'border-gray-700 hover:bg-gray-800' : 'border-gray-300 hover:bg-black'} transition-all hover:text-white`}>
               <i className="fa-brands fa-instagram fa-lg"></i>
             </a>
-            <a href="#" className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center border ${darkMode ? 'border-gray-700 hover:bg-black hover:border-black' : 'border-gray-300 hover:bg-black hover:border-black'} transition-all hover:text-white`}>
+            <a href="#" className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center border ${darkMode ? 'border-gray-700 hover:bg-gray-800' : 'border-gray-300 hover:bg-black'} transition-all hover:text-white`}>
               <i className="fa-brands fa-facebook fa-lg"></i>
             </a>
-            <a href="#" className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center border ${darkMode ? 'border-gray-700 hover:bg-black hover:border-black' : 'border-gray-300 hover:bg-black hover:border-black'} transition-all hover:text-white`}>
+            <a href="#" className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center border ${darkMode ? 'border-gray-700 hover:bg-gray-800' : 'border-gray-300 hover:bg-black'} transition-all hover:text-white`}>
               <i className="fa-brands fa-pinterest fa-lg"></i>
             </a>
-            <a href="#" className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center border ${darkMode ? 'border-gray-700 hover:bg-black hover:border-black' : 'border-gray-300 hover:bg-black hover:border-black'} transition-all hover:text-white`}>
+            <a href="#" className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center border ${darkMode ? 'border-gray-700 hover:bg-gray-800' : 'border-gray-300 hover:bg-black'} transition-all hover:text-white`}>
               <i className="fa-brands fa-youtube fa-lg"></i>
             </a>
           </div>
@@ -48,6 +52,12 @@ const Footer = ({ darkMode }) => {
           </div>
         </div>
       </div>
+      <button
+        className={`px-4 py-2 top-48 text-xl absolute right-0 transform -rotate-90 origin-bottom-right ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-black'} border ${darkMode ? 'border-gray-700' : 'border-gray-300'} hover:bg-black hover:text-white`}
+        onClick={scrollToTop}
+      >
+        <span>TOP</span> <i className="fa-solid fa-arrow-up transform rotate-90"></i>
+      </button>
     </footer>
   );
 }

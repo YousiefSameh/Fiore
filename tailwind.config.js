@@ -9,6 +9,7 @@ module.exports = {
         third: "#F0EFEB",
         fourth: "#E5E8D5",
         dark: "#1F2937",
+        overlay: "rgb(0 0 0 /0.5)",
         background: "#F1F1F1",
       },
       fontFamily: {
