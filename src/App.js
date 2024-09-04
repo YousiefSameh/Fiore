@@ -9,6 +9,7 @@ import Gifts from './Gifts';
 import SchoolFlower from './SchoolFlower';
 import Blogs from './Blogs';
 import Readmore from './Readmore';
+import OurStore from './OurStore';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
       <SchoolFlower />
       <Blogs />
       <Readmore />
+      <OurStore />
     </main>
   );
 };
