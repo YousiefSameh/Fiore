@@ -1,19 +1,19 @@
 import React from "react";
 
-const OurStore = () => {
+const OurStore = ({ darkMode }) => {
   return (
-    <section className="pb-24">
-      <div className="container mx-auto bg-third h-full flex flex-col lg:flex-row gap-12 items-center p-6 lg:p-0">
+    <section className={`pb-24 ${darkMode ? 'bg-gray-900' : 'bg-third'}`}>
+      <div className={`container mx-auto h-full flex flex-col lg:flex-row gap-12 items-center p-6 lg:p-0 ${darkMode ? 'text-gray-300' : 'text-black'}`}>
         <img
           src="Images/img24.jpg"
-          className="w-full lg:w-1/2 p-8 lg:p-16 bg-secondary"
+          className={`w-full lg:w-1/2 p-8 lg:p-16 ${darkMode ? 'bg-gray-800' : 'bg-secondary'}`}
           alt=""
         />
-        <div className="text w-full lg:w-1/2">
-          <h1 className="font-primary text-4xl sm:text-5xl lg:text-6xl">
+        <div className={`text w-full lg:w-1/2 ${darkMode ? 'text-gray-300' : 'text-black'}`}>
+          <h1 className={`font-primary text-4xl sm:text-5xl lg:text-6xl ${darkMode ? 'text-gray-300' : 'text-black'}`}>
             Our Store
           </h1>
-          <div className="row flex flex-col sm:flex-row mt-12 w-full pr-0 lg:pr-12 justify-between gap-6">
+          <div className={`row flex flex-col sm:flex-row mt-12 w-full pr-0 lg:pr-12 justify-between gap-6 ${darkMode ? 'text-gray-300' : 'text-black'}`}>
             <p>
               Goddard Hall 60 <br /> Washington Square E <br /> New York, NY
               10003, USA
@@ -22,8 +22,8 @@ const OurStore = () => {
               +20 123-456-7890 <br /> info@fiore.com
             </p>
           </div>
-          <hr className="border-fourth my-12" />
-          <div className="row flex flex-col sm:flex-row mt-12 w-full pr-0 lg:pr-12 justify-between gap-6">
+          <hr className={`border-fourth my-12 ${darkMode ? 'border-gray-700' : 'border-fourth'}`} />
+          <div className={`row flex flex-col sm:flex-row mt-12 w-full pr-0 lg:pr-12 justify-between gap-6 ${darkMode ? 'text-gray-300' : 'text-black'}`}>
             <p>
               Monday - Friday <br /> 7am - 7pm <br />
             </p>
@@ -31,7 +31,7 @@ const OurStore = () => {
               Saturday - Sunday <br /> 8am - 7pm <br />
             </p>
           </div>
-          <button className="border border-black px-8 sm:px-12 py-4 rounded-full hover:bg-black hover:text-white transition-colors w-fit my-12">
+          <button className={`border ${darkMode ? 'border-gray-500' : 'border-black'} px-8 sm:px-12 py-4 rounded-full hover:${darkMode ? 'bg-gray-700 text-gray-300' : 'bg-black text-white'} transition-colors w-fit my-12`}>
             <a href="#" className="text-inherit uppercase">
               View Map
             </a>

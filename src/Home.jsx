@@ -1,15 +1,18 @@
-import React from 'react';
-import Navbar from './Navbar';
+import React, { useState } from 'react';
+// import Navbar from './Navbar';
 
-const Home = () => {
+const Home = ({darkMode}) => {
+
   return (
-    <header className='bg-third h-screen'>
+    <header className={`h-screen ${darkMode ? 'bg-gray-900 text-white' : 'bg-third text-black'}`}>
       <div className="container mx-auto px-4 md:px-8">
-        <Navbar/>
+        {/* <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} /> */}
         <div className="hero flex flex-col-reverse md:flex-row items-center justify-around">
           <div className="text flex flex-col gap-8 md:gap-16 text-center md:text-left mt-8 md:mt-0">
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold font-primary">We Tell Stories <br /> With Flowers</h1>
-            <button className='border border-black px-8 md:px-12 py-3 md:py-4 w-fit self-center md:self-start rounded-full hover:bg-black hover:text-white transition-colors'>
+            <h1 className={`text-4xl md:text-5xl lg:text-7xl font-bold font-primary ${darkMode ? 'text-white' : 'text-black'}`}>
+              We Tell Stories <br /> With Flowers
+            </h1>
+            <button className={`border px-8 md:px-12 py-3 md:py-4 w-fit self-center md:self-start rounded-full transition-colors ${darkMode ? 'border-white hover:bg-white hover:text-black' : 'border-black hover:bg-black hover:text-white'}`}>
               <a href="#" className='text-inherit uppercase'>Shop Now</a>
             </button>
           </div>

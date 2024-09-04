@@ -8,6 +8,7 @@ module.exports = {
         secondary: "#6A6E49",
         third: "#F0EFEB",
         fourth: "#E5E8D5",
+        dark: "#1F2937",
         background: "#F1F1F1",
       },
       fontFamily: {
