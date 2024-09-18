@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 const Home = ({darkMode}) => {
 
   return (
-    <header className={`h-screen ${darkMode ? 'bg-gray-900 text-white' : 'bg-third text-black'}`}>
+    <header className={`h-[70vh] md:h-screen ${darkMode ? 'bg-gray-900 text-white' : 'bg-third text-black'} flex items-center justify-center sm:block`}>
       <div className="container mx-auto px-4 md:px-8">
         {/* <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} /> */}
         <div className="hero flex flex-col-reverse md:flex-row items-center justify-around">
