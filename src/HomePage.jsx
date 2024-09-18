@@ -37,7 +37,7 @@ const HomePage = () => {
               className={`bg-transparent p-3 placeholder:text-${darkMode ? 'white' : 'black'} placeholder:uppercase w-full md:w-auto mb-0`} 
             />
             <h1 className='font-primary text-3xl md:text-5xl px-4 md:p-2 font-bold text-center md:text-left'>Fiore</h1>
-            <svg xmlns="http://www.w3.org/2000/svg" onClick={() => setIsMobile(!isMobile)} className="block mt-1 md:hidden w-[30px] h-[30px]" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" onClick={() => setIsMobile(!isMobile)} className={`block mt-1 md:hidden w-[30px] h-[30px] ${darkMode ? "fill-white" : "fill-black"}`} viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
             <div className="account hidden md:flex gap-4 md:gap-6 items-center">
               <Link to="./Login" className={`uppercase text-sm md:text-base ${darkMode ? 'text-white' : 'text-black'}`}>Account</Link>
               <a href="#"><i className={`fa-regular fa-heart fa-lg md:fa-xl hover:text-red-600 transition-all ${darkMode ? 'text-white' : 'text-black'}`}></i></a>
@@ -65,7 +65,7 @@ const HomePage = () => {
           </div>
         </div>
       </nav>
-      <nav className={`p-4 ${darkMode ? 'text-white' : 'text-black bg-third'} flex flex-col space-y-6 h-screen z-50 fixed top-0 transition-all ${isMobile ? "left-0" : "-left-full"} pt-16 w-1/2`}>
+      <nav className={`p-4 ${darkMode ? 'text-white bg-gray-900' : 'text-black bg-third'} flex md:hidden flex-col space-y-6 h-screen z-50 fixed top-0 transition-all ${isMobile ? "left-0" : "-left-full"} pt-16 w-1/2`}>
         {LinksTitle.map((item) => (
           <a 
             href="#" 
